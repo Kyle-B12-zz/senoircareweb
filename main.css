@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Sail&display=swap');
+
+/*Start global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    color: #eee;
+    background-image: url(./images/flowers.jpg);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*End global*/
+
+
+/*Start reusable*/
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.section-heading h1 {
+    font-size: 3.5rem;
+    font-family: 'Sail', cursive;
+    color: rgba(158, 22, 153, 0.11);
+    -webkit-text-stroke: 1px #B02AAB;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+/*End reusable*/
+
+
+/*Start header*/
+
+header {
+    width: 100%;
+    height: 23vh;
+}
+
+.top-nav {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+}
+
+.top-nav h1 {
+    font-family: 'Sail', cursive;
+    color: rgba(158, 22, 153, 0.11);
+    -webkit-text-stroke: 1px #B02AAB;
+}
+
+.nav-list li {
+    float: left;
+    padding-top: 0px;
+    padding: 0 50px 0 50px;
+    font-size: 30px;
+}
+
+li a {
+    color: #B02AAB;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+
+/*End header*/
+
+
+/*Start about*/
+
+.about .container {
+    margin-top: -90px;
+    color: #B02AAB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading {
+    font-family: 'Sail', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.about-heading h1 {
+    font-size: 5rem;
+}
+
+.profile-img {
+    flex: 1;
+    margin-right: 5rem;
+}
+
+.about-details p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-details {
+    flex: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*End about*/
+
+
+/*Start services*/
+
+.section-heading ul {
+    color: #B02AAB;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Sail', cursive;
+    line-height: 55px;
+}
+
+.section-heading p {
+    font-family: 'Sail', cursive;
+    color: #B02AAB;
+    font-size: 25px;
+}
+
+.section-heading h1 {
+    font-size: 45px;
+}
+
+.section-heading h2 {
+    font-size: 20px;
+    padding: 10px;
+    color: #B02AAB;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/*End services*/
+
+
+/*Start contact*/
+
+.ctn {
+    margin-top: -100px;
+    text-align: center;
+    color: #B02AAB;
+    padding: 15px;
+}
+
+.ctn p {
+    padding: 1rem;
+    color: #B02AAB;
+    font-size: 25px;
+    font-family: 'Sail', cursive;
+}
+
+.ctn a {
+    color: #B02AAB;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ctn strong {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ctn a:hover {
+    opacity: 0.5;
+}
+
+.ctn p:hover {
+    cursor: pointer;
+}
+
+
+/*End contact*/
+
+
+/*Start footer*/
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    border-radius: 100%;
+    right: 5rem;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer
+}
+
+.up i {
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+}
+
+
+/*End footer*/
+
+
+/*Start animations*/
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70% {
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+
+
+/*End animations*/
+
+
+/*Start media queries*/
+
+@media screen and (max-width: 500px) {
+    .nav-list li {
+        padding: 0 10px;
+    }
+    .profile-img {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        align-content: center;
+    }
+    .about-heading h1 {
+        font-size: 5rem;
+    }
+    .section-heading h1 {
+        font-size: 5rem;
+    }
+    .about-details .nav-list {
+        flex-direction: initial;
+    }
+    .about-details li {
+        margin: 0 2rem;
+    }
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
+    }
+    .icon-container i {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about .container {
+        flex-direction: column;
+    }
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        align-content: center;
+    }
+    .up {
+        right: 2rem;
+    }
+}
+
+
+/*End media queries*/
